@@ -6,4 +6,8 @@ pkgs.mkShell {
     python313Packages.pytest
     python313Packages.debugpy
   ];
+
+  shellHook = ''
+   code .
+  '';
 }
