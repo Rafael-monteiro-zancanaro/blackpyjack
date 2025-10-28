@@ -1,5 +1,5 @@
 name: BlackPyJack Pipeline 
-
+run: PYTHONPATH=. pytest
 on:
   push:
     branches: [ "master", "feature/*", "fix/*" ]

@@ -1,11 +1,10 @@
-from config import SUITS
 from entities.card import Card
 import pytest
-from utility import shuffle
+from utility import deck_generator
 
 
 def test_all_suits_have_all_cards() -> None:
-    cards: list[Card] = shuffle.get_cards_shuffled()
+    cards: list[Card] = deck_generator.get_cards_shuffled()
     (club_cards, diamond_cards, heart_cards, sword_cards) = (0,0,0,0)
 
     for card in cards:
