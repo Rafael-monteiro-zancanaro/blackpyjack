@@ -1,5 +1,4 @@
 name: BlackPyJack Pipeline 
-run: PYTHONPATH=. pytest
 on:
   push:
     branches: [ "master", "feature/*", "fix/*" ]
@@ -33,4 +32,5 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
+        PYTHONPATH=. pytest
         pytest
