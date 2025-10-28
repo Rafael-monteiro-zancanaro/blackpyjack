@@ -5,6 +5,7 @@ pkgs.mkShell {
     python313
     python313Packages.pytest
     python313Packages.debugpy
+    python313Packages.flake8
   ];
 
   shellHook = ''
